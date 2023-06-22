@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://kit.fontawesome.com/687c96aafb.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.line{
+			width: 7px;
+			height: 7px;
+			background-color: black;
+			margin-left: 15px;
+			animation: pushpa 1s infinite;
+		}
+		@keyframes pushpa{
+			30%{
+				transform: scaleY(5);
+			}
+			60%{
+				transform: scaleY(1);
+			}
+		}
+		.pooja{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="pooja">
+		<div class="line" style="animation-delay: 100ms"></div>
+		<div class="line" style="animation-delay: 200ms"></div>
+		<div class="line" style="animation-delay: 300ms"></div>
+		<div class="line" style="animation-delay: 400ms"></div>
+		<div class="line" style="animation-delay: 500ms"></div>
+		<div class="line" style="animation-delay: 600ms"></div>
+	</div>
+</body>
+</html>
